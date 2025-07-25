@@ -20,8 +20,8 @@
 
 header {
     margin-top: 30px;
-    margin-left: 10.5vw;
-    margin-right: 150px;
+    margin-left: 10vw;
+    margin-right: 10vw;
 
     display: flex;
     justify-content: space-between;
@@ -71,8 +71,8 @@ header {
 /* Banner Section */
 
 .banner {
-    margin-left: 10.5vw;
-    margin-right: 10.5vw;
+    margin-left: 10vw;
+    margin-right: 10vw;
 
     display: flex;
     justify-content: space-between;
@@ -121,9 +121,13 @@ header {
 
 
 
+
 /* Responsive Part */
 
 @media (max-width: 576px) {
+
+    /* Header Part */
+
     .nav-items li:not(:last-child) {
         display: none;
     }
@@ -132,7 +136,6 @@ header {
         padding-top: 7px;
         padding-bottom: 7px;
 
-        margin-right: 4vw;
     }
 
     .cart-icon {
@@ -152,4 +155,45 @@ header {
         justify-content: space-between;
         gap: auto;
     }
+
+    /* Banner Part */
+
+    .banner {
+        flex-direction: column-reverse;
+        align-items: center;
+
+        margin: 0 0 0 0;
+    }
+
+    .banner-left {
+        width: 100%;
+        margin-top: 28px;
+        margin-left: 4.1vw;
+        margin-right: 4.1vw;
+    }
+
+    .banner-left h2 {
+        font-size: 24px;
+        font-weight: bold;
+
+        width: 60%;
+    }
+
+    .banner-left p {
+        font-size: 14px;
+    }
+
+    .banner-right {
+        width: 100%;
+    }
+
+    
+    .banner-right img {
+        width: 100vw;
+        margin-left: -4.1vw;
+        margin-right: -4.1vw;
+        display: block;
+        max-width: none;
+    }
+
 }
