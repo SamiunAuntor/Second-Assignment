@@ -788,6 +788,18 @@ body {
         margin: 0;
     }
 
+    .overlay-text h2 {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .overlay-text h2 {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
     .overlay-text a {
         font-size: 16px;
         font-weight: 600;
@@ -797,16 +809,23 @@ body {
 
     .latest-deals-description h2 {
         font-size: 24px;
+        margin-bottom: 10px;
     }
 
     .latest-deals-description p {
         font-size: 14px;
         margin: 0 5%;
+
+        margin-bottom: 20px;
     }
 
     .larger-card {
         font-size: 20px;
         font-weight: bold;
+    }
+
+    .latest-deals {
+        margin-top: 80px;
     }
 
     /* Newsletter Section */
