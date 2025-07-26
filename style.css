@@ -377,6 +377,83 @@ header {
     margin-bottom: 0px;
 }
 
+/* Newsletter Section */
+
+/* Reset default body margin and padding to avoid overflow */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Newsletter Section */
+.newsletter-section {
+    background-image: url('assets/news-letter-bg.png');
+    background-size: cover;
+    background-position: center;
+    height: 533px;
+
+    /* Use 100% width instead of 100vw to prevent horizontal scroll */
+    width: 100%;
+
+    margin-top: 120px;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+/* Container inside */
+.newsletter-content {
+    text-align: center;
+    color: white;
+    width: 100%;
+    max-width: 830px;
+    padding: 0;
+    margin: 0 auto;
+}
+
+/* Heading */
+.newsletter-content h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+/* Form */
+.newsletter-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+/* Email input */
+.newsletter-form input[type="email"] {
+    padding: 12px 16px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    width: 70%;
+    max-width: 600px;
+    margin: 0;
+}
+
+/* Subscribe button */
+.newsletter-form button {
+    padding: 12px 24px;
+    background-color: #E95A08;
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    margin: 0;
+}
+
+
 
 
 /* Responsive Part */
@@ -657,6 +734,51 @@ header {
         font-size: 20px;
         font-weight: bold;
     }
+
+    /* Newsletter Section */
+
+    @media (max-width: 576px) {
+        .newsletter-section {
+            margin-top: 300px;
+
+            height: 280px;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        .newsletter-content {
+            max-width: none;
+            margin: 0 5vw;
+            width: auto;
+            padding: 0;
+        }
+
+        .newsletter-content h2 {
+            font-size: 20px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .newsletter-form {
+            gap: 0;
+        }
+
+        .newsletter-form input[type="email"],
+        .newsletter-form button {
+            font-size: inherit;
+        }
+
+        .newsletter-form input[type="email"] {
+            flex-grow: 1;
+            margin: 0;
+        }
+
+        .newsletter-form button {
+            margin: 0;
+        }
+    }
+
 
 
 
